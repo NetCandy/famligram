@@ -24,9 +24,22 @@ class DatabaseSeeder extends Seeder
                 'remember_token' => Str::random(10),
             ]);
 
-            factory(Post::class, rand(2,10))->create([
+            factory(Post::class, rand(2, 10))->create([
                 'user_id' => $familyMember->id,
             ]);
+        });
+
+        collect(Post::all())->each(function ($post) {
+            $numberOfComments = rand(0, 6);
+            if ($numberOfComments > 0) {
+                collect(range(1, $numberOfComments, 1))->each(function ($num) use ($post){
+                    $userId = User::all()->pluck('id')->random();
+                    factory(\App\Comment::class)->create([
+                        'user_id' => $userId,
+                        'post_id' => $post->id
+                    ]);
+                });
+            }
         });
 
 
