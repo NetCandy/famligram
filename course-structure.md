@@ -1,8 +1,11 @@
-That's actually a great idea. Theory crafting here...
+## Notes
 
-If we are able to order the learning paths (modules) for each track we could have the "test" at the end of the module be build "this" using the skills you learn't.
+1. First challenge is scope. I quickly realised that there are alot of features that Instagram provides. I'm just trying to implement everything I see in the UI. We probably want to be more restrictive with our spec.
+2. We should provide a UI mock-up of each page. It should probably not be fully styled to give people the opportunity to do things their way.
+   1. Consider providing a set of icons so users don't need to use font-awesome etc. 
+3. The choice of API between front and back-end may be too complex for new developers. We should suggest using Blade + Vue enhancements as the baseline. People can go SPA if they wish.
 
-Using the "Brand-new developers" track as an example the order
+## Course Structure
 
 1. Introduction to Onramp
     1. How Onramp works.

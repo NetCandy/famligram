@@ -2,7 +2,7 @@
 
 ### Posts
 
-- Add the ability for users to *like* a post.
+- Add the ability for users to **like** a post.
 - Add the ability for users to *bookmark* a post.
 - Add the ability for users to *share* a post.
 
@@ -23,3 +23,9 @@
 
 - Add the ability for users to ***@mention*** other users in posts and comments.
 - The system should notify users when they have been @mentioned.
+
+```php
+public function foo() {
+    return "bar";
+}  
+```

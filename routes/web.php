@@ -11,13 +11,14 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
-Auth::routes();
+});*/
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/', [\App\Http\Controllers\PostController::class, 'index']);
 
-Route::get('posts', [\App\Http\Controllers\PostController::class, 'index']);
+Route::get('{user}', [\App\Http\Controllers\ProfileController::class, 'index']);
 
+Auth::routes();
