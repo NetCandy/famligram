@@ -23373,7 +23373,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__["library"].add(_fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faHeart"], _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faComment"], _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faShareSquare"], _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faBookmark"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faEllipsisH"]);
+
+
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__["library"].add(_fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faHeart"], _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faComment"], _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faShareSquare"], _fortawesome_free_regular_svg_icons__WEBPACK_IMPORTED_MODULE_3__["faBookmark"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faEllipsisH"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faBorderAll"], _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_4__["faUserTag"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.component('font-awesome-icon', _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_2__["FontAwesomeIcon"]);
 vue__WEBPACK_IMPORTED_MODULE_0___default.a.config.productionTip = false;
 var app = new vue__WEBPACK_IMPORTED_MODULE_0___default.a({

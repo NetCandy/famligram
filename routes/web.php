@@ -19,6 +19,6 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', [\App\Http\Controllers\PostController::class, 'index']);
 
-Route::get('{user}', [\App\Http\Controllers\ProfileController::class, 'index']);
+Route::get('{profile}', [\App\Http\Controllers\ProfileController::class, 'index']);
 
 Auth::routes();
