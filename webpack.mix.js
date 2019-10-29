@@ -8,7 +8,6 @@ mix.js('resources/js/app.js', 'public/js')
     .tailwind('./tailwind.config.js')
     .browserSync({
         proxy: 'https://famligram.test',
-        'browser': 'firefox'
     });
 
 if (mix.inProduction()) {

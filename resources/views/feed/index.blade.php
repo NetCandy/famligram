@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="flex flex-col sm:flex-row">
+    <div class="flex flex-col sm:justify-center sm:flex-row">
         @if (count($posts) > 0)
-            <ol class="sm:w-2/3 lg:w-1/2">
+            <ol class="sm:w-3/5">
                 @foreach($posts as $post)
                     <li class="mt-4 bg-white rounded border border-gray-300" {{--style="width: 500px"--}}>
                         <div class="flex justify-between items-center p-4">
@@ -52,7 +52,7 @@
         @else
             <p>No Posts</p>
         @endif
-        <div class="sm:w-1/3 md:w-1/3 lg:w-1/4">
+        <div>
             <div class="flex flex-col">
                 <div class="mt-4 pl-4">
                     <div class="flex items-center">
@@ -65,7 +65,7 @@
                 </div>
                 <div class="mt-4 pl-4">
                     <div class="flex flex-col bg-white p-4 rounded border border-gray-400">
-                        <div class="flex justify-between min-w-full">
+                        <div class="flex justify-between">
                             <h3 class="text-gray-500 text-sm font-bold">Stories</h3>
                             <span class="text-sm font-semibold">Watch all</span>
                         </div>
