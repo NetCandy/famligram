@@ -8,6 +8,6 @@ class PostController extends Controller
 {
     public function index()
     {
-        return view('feed.index')->with('posts', Post::with('author', 'comments')->get());
+        return view('posts.index')->with('posts', Post::with('author', 'comments')->get());
     }
 }
