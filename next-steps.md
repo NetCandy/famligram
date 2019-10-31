@@ -1,9 +1,10 @@
 ## Posts
 
-| Status             | Task                                                         | Notes |
-|:-------------------|:-------------------------------------------------------------|:------|
-| :heavy_check_mark: | Seed *Post* dates                                            |       |
-| :x:                | Dates and times should be presented in human friendly format |       |
+| Status                   | Task                                                         | Notes |
+|:-------------------------|:-------------------------------------------------------------|:------|
+| :heavy_check_mark:       | Seed *Post* dates                                            |       |
+| :heavy_check_mark:       | Dates and times should be presented in human friendly format |       |
+| :heavy_check_mark:       | Sort *posts* newest to oldest                                |       |
 
 ### Likes
 
@@ -20,9 +21,10 @@
 | :x:    | Seed *Bookmarks*                        |                        |
 
 ### Sharing
-| Status | Task                                    | Notes               |
-|:-------|:----------------------------------------|:--------------------|
-| :x:    | A *user* can share many *posts*.        |                     |
+
+| Status | Task                             | Notes |
+|:-------|:---------------------------------|:------|
+| :x:    | A *user* can share many *posts*. |       |
 
 ### Comments
 
@@ -56,6 +58,7 @@
 - [ ] Add the ability for the users to search for #tags.
 
 ## @mention support
+
 | Status | Task                                                             | Notes |
 |:-------|:-----------------------------------------------------------------|:------|
 | :x:    | A *user* can **mention** other *Users* in *posts* and *comments* |       |
