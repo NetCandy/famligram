@@ -1,10 +1,22 @@
+## Authentication and Authorization
+
+| Status | Task                                                                | Notes                      |
+|:-------|:--------------------------------------------------------------------|:---------------------------|
+| :x:    | Posts can only be viewed by family members                          |                            |
+| :x:    | Only adults can create a family group                               |                            |
+| :x:    | A family group owner can only add other adults members to the group |                            |
+| :x:    | Adult members can add their children to the group.                  | Member is marked as parent |
+| :x:    | Parents can set age appropriate filters for their children          | Ex. 18+, 16+, 13+ or U     |
+| :x:    | A parent can always see their children's posts and activity.        | Child can't block them     |
+
 ## Posts
 
-| Status                   | Task                                                         | Notes |
-|:-------------------------|:-------------------------------------------------------------|:------|
-| :heavy_check_mark:       | Seed *Post* dates                                            |       |
-| :heavy_check_mark:       | Dates and times should be presented in human friendly format |       |
-| :heavy_check_mark:       | Sort *posts* newest to oldest                                |       |
+| Status             | Task                                                         | Notes |
+|:-------------------|:-------------------------------------------------------------|:------|
+| :heavy_check_mark: | Seed *Post* dates                                            |       |
+| :heavy_check_mark: | Dates and times should be presented in human friendly format |       |
+| :heavy_check_mark: | Sort *posts* newest to oldest                                |       |
+| :x:                | *Posts* can be labeled as NSFW, 18+, 16+ 13+ U               |       |
 
 ### Likes
 
