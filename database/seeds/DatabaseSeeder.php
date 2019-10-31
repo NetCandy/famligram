@@ -1,6 +1,7 @@
 <?php
 
 use App\Comment;
+use App\Like;
 use App\Post;
 use App\User;
 use Illuminate\Database\Seeder;
@@ -16,15 +17,11 @@ class DatabaseSeeder extends Seeder
 
         })->map(function (User $familyMember) {
 
-            return $this->addPostsForFamilyMember($familyMember);
+            return $this->addPostsByFamilyMember($familyMember);
 
         })->flatten()->map(function (Post $post) {
 
             return $this->addCommentsToPost($post);
-
-        })->flatten()->each(function (Comment $comment){
-
-
 
         });
     }
@@ -40,11 +37,23 @@ class DatabaseSeeder extends Seeder
         ]);
     }
 
-    protected function addPostsForFamilyMember(User $familyMember): Collection
+    protected function addPostsByFamilyMember(User $familyMember): Collection
     {
-        return factory(Post::class, rand(2, 10))->create([
+        $posts = factory(Post::class, rand(2, 10))->create([
             'user_id' => $familyMember->id,
-        ]);
+        ])->each(function ($post){
+            for ($familyMemberId = 1; $familyMemberId <= rand(0, 6); $familyMemberId++) {
+                $post->likes()->save(
+                    new Like([
+                        'user_id' => $familyMemberId,
+                        'likable_id' => $post->id,
+                        'likable_type' => Post::class,
+                    ])
+                );
+            }
+        });
+
+        return $posts;
     }
 
     protected function addCommentsToPost(Post $post): Collection
@@ -54,7 +63,7 @@ class DatabaseSeeder extends Seeder
             $userId = User::all()->pluck('id')->random();
             $comments[] = factory(Comment::class)->create([
                 'user_id' => $userId,
-                'post_id' => $post->id
+                'post_id' => $post->id,
             ]);
         }
 
