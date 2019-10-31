@@ -1,33 +1,63 @@
-## Features
+## Posts
 
-### Posts
+| Status             | Task                                                         | Notes |
+|:-------------------|:-------------------------------------------------------------|:------|
+| :heavy_check_mark: | Seed *Post* dates                                            |       |
+| :x:                | Dates and times should be presented in human friendly format |       |
 
-- Add the ability for users to ***like*** a post.
-- Add the ability for users to ***bookmark*** a post.
-- Add the ability for users to ***share*** a post.
+### Likes
+
+| Status | Task                               | Notes                 |
+|:-------|:-----------------------------------|:----------------------|
+| :x:    | A *user* can **like** many *posts* | *User*^1^ → *Post*^m^ |
+| :x:    | Seed *Likes*                       |                       |
+
+### Bookmarks
+
+| Status | Task                                    | Notes                  |
+|:-------|:----------------------------------------|:-----------------------|
+| :x:    | A *user* can **bookmark** many *posts*. | *User*^1^ → *Post**^m^ |
+| :x:    | Seed *Bookmarks*                        |                        |
+
+### Sharing
+| Status | Task                                    | Notes               |
+|:-------|:----------------------------------------|:--------------------|
+| :x:    | A *user* can share many *posts*.        |                     |
 
 ### Comments
 
-- Add the ability for users to *like* a comment.
+| Status | Task                         | Notes |
+|:-------|:-----------------------------|:------|
+| :x:    | A user can *like* a comment. |       |
 
-### Dates
+### Stories
 
-- Dates and times should be presented in human friendly format.
+| Status | Task                                             | Notes |
+|:-------|:-------------------------------------------------|:------|
+| :x:    | A user can **create** *Stories*                  |       |
+| :x:    | A user can **add** existing *posts* to *Stories* |       |
+| :x:    | A user can **add** new *posts* to *Stories*      |       |
+| :x:    | Seed *Stories*                                   |       |
 
-### \#tag support
 
-- Add the ability for the users to ***tag*** posts and comments with
-  #tags.
-- Add the ability for the users to search for #tags.
+## UI
 
-### @mention support
+| Status | Task                                                          | Notes |
+|:-------|:--------------------------------------------------------------|:------|
+| :x:    | Dates and times should be presented in human friendly format. |       |
 
-- Add the ability for users to ***@mention*** other users in posts and
-  comments.
-- The system should notify users when they have been @mentioned.
+## \#tags
 
-```php
-public function foo() {
-    return "bar";
-}  
-```
+| Status | Task                                                   | Notes                              |
+|:-------|:-------------------------------------------------------|:-----------------------------------|
+| :x:    | A user can **tag** *posts* and *comments* with a #tags | (*Post,Comment*)^m^ → *HashTag*^m^ |
+| :x:    | Seed *Posts* and *Comments* with *HashTags*            |                                    |
+
+- [ ] Add the ability for the users to search for #tags.
+
+## @mention support
+| Status | Task                                                             | Notes |
+|:-------|:-----------------------------------------------------------------|:------|
+| :x:    | A *user* can **mention** other *Users* in *posts* and *comments* |       |
+| :x:    | Seed *Posts* and *Comments* with **Mentions**                    |       |
+| :x:    | *Users* should be *notified* when they are **Mentioned**         |       |

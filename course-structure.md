@@ -5,6 +5,7 @@
    1. Consider providing a set of icons so users don't need to use font-awesome etc. 
 3. The choice of API between front and back-end may be too complex for new developers. We should suggest using Blade + Vue enhancements as the baseline. People can go SPA if they wish.
 4. Layout can be quite complex. Is tailwind acceptable or does it need to be pure CSS?
+5. Should onramp users stick to hand-cranked code vs packages to demonstrate understanding?
 
 ## Course Structure
 
