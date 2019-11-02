@@ -10,6 +10,27 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Post extends Model
 {
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::addGlobalScope(
+            'latest-with-authors-comments-likes',
+            function (Builder $builder) {
+                $builder->with('author', 'comments', 'likes')
+                    ->withCount('likes')
+                    ->addSelect(
+                        [
+                            'liked_by_user' => Like::select('user_id')
+                                ->where('user_id', '=', auth()->user()->id)
+                                ->whereColumn('likable_id', '=', 'posts.id')
+                        ]
+                    )
+                    ->latest();
+            }
+        );
+    }
+
     public function author()
     {
         return $this->belongsTo(User::class, 'user_id');
@@ -23,14 +44,5 @@ class Post extends Model
     public function likes()
     {
         return $this->morphMany(Like::class, 'likable');
-    }
-
-    protected static function boot()
-    {
-        parent::boot();
-
-        static::addGlobalScope('newest-first', function (Builder $builder) {
-            $builder->latest();
-        });
     }
 }

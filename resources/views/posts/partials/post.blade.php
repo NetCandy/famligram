@@ -25,10 +25,21 @@
                             'waves',
                         ]) }}-500x500.jpg" width="500" height="500">
     <div class="flex justify-between px-4 mt-4">
-        <div>
-            <font-awesome-icon class="text-gray-500 hover:text-red-500"
-                               :icon="['far','heart']"
-                               size="lg"></font-awesome-icon>
+        <div class="flex">
+            <div class="flex items-center">
+                @if($post->liked_by_user == auth()->user()->id)
+                    <font-awesome-icon class="text-red-500 hover:text-red-500"
+                                       :icon="['fa','heart']"
+                                       size="lg"></font-awesome-icon>
+                @else
+                    <font-awesome-icon class="text-gray-500 hover:text-red-500"
+                                       :icon="['far','heart']"
+                                       size="lg"></font-awesome-icon>
+                @endif
+                @if($post->likes_count > 0)
+                    <span class="ml-1 text-xs font-semibold text-gray-900">{{$post->likes_count}}</span>
+                @endif
+            </div>
             <font-awesome-icon class="ml-2 text-gray-500 hover:text-blue-500"
                                :icon="['far','comment']"
                                size="lg"></font-awesome-icon>
