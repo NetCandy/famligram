@@ -40,25 +40,32 @@
                     <span class="ml-1 text-xs font-semibold text-gray-900">{{$post->likes_count}}</span>
                 @endif
             </div>
-            <font-awesome-icon class="ml-2 text-gray-500 hover:text-blue-500"
-                               :icon="['far','comment']"
+        </div>
+        <div>
+            <font-awesome-icon class="text-gray-500 hover:text-gray-700"
+                               :icon="['far','bookmark']"
                                size="lg"></font-awesome-icon>
             <font-awesome-icon class="ml-2 text-gray-500 hover:text-blue-500"
                                :icon="['far','share-square']"
                                size="lg"></font-awesome-icon>
         </div>
-        <font-awesome-icon class="text-gray-500 hover:text-gray-700"
-                           :icon="['far','bookmark']"
-                           size="lg"></font-awesome-icon>
     </div>
     <p class="px-4 mt-4 leading-snug text-sm">
         <span class="font-bold">{{ $post->author->name }}</span>
         {{$post->text}}
     </p>
     @if(count($post->comments) > 0)
-        @foreach($post->comments as $comment)
-            <p class="px-4 mt-4 leading-snug text-sm text-gray-700">{{ $comment->text }}</p>
-        @endforeach
+        @if(\Illuminate\Support\Str::length($post->comments->first()->text) >= 100)
+            <p class="px-4 mt-4 leading-snug text-sm text-gray-800">
+                {{ \Illuminate\Support\Str::limit($post->comments->first()->text, 100) }}
+                <a href="#" class="leading-snug text-sm font-semibold text-gray-500">more</a>
+            </p>
+        @else
+            <p class="px-4 mt-4 leading-snug text-sm text-gray-800">{{ $post->comments->first()->text }}</p>
+        @endif
+    @endif
+    @if(count($post->comments) > 1)
+            <a href="#" class="px-4 leading-snug text-sm font-semibold text-gray-500">View all {{ count($post->comments) }} comments</a>
     @endif
     <div class="mt-2 flex justify-between p-4 border-t border-gray-200 text-sm text-gray-500">
         Add comment

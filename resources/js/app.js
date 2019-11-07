@@ -5,7 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 import { faHeart } from '@fortawesome/free-regular-svg-icons'
 import { faHeart as faHeartSolid } from '@fortawesome/free-solid-svg-icons'
-import { faComment } from '@fortawesome/free-regular-svg-icons'
 import { faShareSquare } from '@fortawesome/free-regular-svg-icons'
 import { faBookmark } from '@fortawesome/free-regular-svg-icons'
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
@@ -13,7 +12,7 @@ import { faBorderAll } from '@fortawesome/free-solid-svg-icons'
 import { faUserTag } from '@fortawesome/free-solid-svg-icons'
 
 
-library.add(faHeart, faHeartSolid, faComment, faShareSquare, faBookmark, faEllipsisH, faBorderAll, faUserTag);
+library.add(faHeart, faHeartSolid, faShareSquare, faBookmark, faEllipsisH, faBorderAll, faUserTag);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
