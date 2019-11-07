@@ -1,11 +1,13 @@
 ## Posts
 
-| Task                                                         | Implemented        | Tested | Notes |
-|:-------------------------------------------------------------|:-------------------|:-------|:------|
-| Seed *Post* dates                                            | :heavy_check_mark: |        |       |
-| Dates and times should be presented in human friendly format | :heavy_check_mark: | :x:    |       |
-| Sort *posts* newest to oldest                                | :heavy_check_mark: |        |       |
-| *Posts* can be labeled as NSFW, 18+, 16+ 13+ U               | :x:                | :x:    |       |
+| Task                                                                                                    | Implemented        | Tested | Notes          |
+|:--------------------------------------------------------------------------------------------------------|:-------------------|:-------|:---------------|
+| Seed *Post* dates                                                                                       | :heavy_check_mark: |        |                |
+| Dates and times should be presented in human friendly format                                            | :heavy_check_mark: | :x:    |                |
+| Sort *posts* newest to oldest                                                                           | :heavy_check_mark: |        |                |
+| *Posts* can be labeled as NSFW, 18+, 16+ 13+ U                                                          | :x:                | :x:    |                |
+| The first *comment* is displayed on the *post* card with a **"view all # comments"** CTA.               | :x:                | :x:    |                |
+| The first *comment* displayed on the *post* card is truncated if it is too long. with a **"more…"** CTA |                    |        | "too long" TBD |
 
 ### Likes
 
@@ -24,6 +26,7 @@
 | A user can *like* a comment. | :x:         | :x:    |       |
 
 ## Authentication
+
 | Task                                                                             | Implemented | Tested | Notes |
 |:---------------------------------------------------------------------------------|:------------|:-------|:------|
 | *Users* must **login** there is no concept of a guest user able  to see content. | :x:         | :x:    |       |
