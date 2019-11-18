@@ -11,7 +11,7 @@ so that I can stay up to date with the parts of their life they have shared.
   
 ## Features of Posts  
   
-- A *family member* can **add** a *[post][post]*.  
+- A *family member* can **add** a *post*^[post][post]^.  
 - The author of an existing *post* can **edit** the *[post][post]*.  
 - The author of an existing *post* can **delete** the *[post][post]*.  
 - *Family members* can see a timeline of *posts* ordered newest to oldest.  
@@ -20,6 +20,6 @@ so that I can stay up to date with the parts of their life they have shared.
 
 [post]:post.md
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NjQ1MzI1NSwtNTc4Mjk0NzU4LDE5Nj
+eyJoaXN0b3J5IjpbLTEwNzMzMjEzNSwtNTc4Mjk0NzU4LDE5Nj
 g1NTY5MjgsMTM2MjM0MDY4OV19
 -->
