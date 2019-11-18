@@ -1,14 +1,20 @@
-# Post
 
-## Post
-| Task|Implemented|Tested|Notes|
-|:--|:--|:--|:--|  
-| Seed *Post* dates| :heavy_check_mark:|||  
-| Dates and times should be presented in human friendly format|:heavy_check_mark:|:x:||
-| Sort *posts* newest to oldest|:heavy_check_mark:|||
-| *Posts* can be labeled as NSFW, 18+, 16+ 13+ U|:x:|:x:||  
-| The first *comment* is displayed on the *post* card with a **"view all # comments"** CTA.|:x:|:x:  ||  
-| The first *comment* displayed on the *post* card is truncated if it is too long. with a **"more…"** CTA |                   ||"too long" TBD|
+# Post  
+  
+As a *family member*,  
+  
+I can read a *post* from another *family member*,    
+  
+so that…   
+  
+## Conditions of Satisfaction  
+  
+### General  
+  
+- [ ] The name of the *post* author is displayed.  
+- [ ] The date of the post is displayed in human readable format. For example, now, 3 minutes ago, 4 hours ago, yesterday.  
+- If present, the text of the *post* is displayed.  
+- If present, the image(s) of the *post* is/are displayed.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk5ODI1NjI2XX0=
+eyJoaXN0b3J5IjpbMTkxMDkxODI5Ml19
 -->
