@@ -18,8 +18,10 @@ so that I can stay up to date with the parts of their life they have shared.
 - A *family member* can indicate that they **like** a *[post][post]*.  
 - A *family member* can **bookmark** a *[post][post]*.
 
-## Re
+## References
+
+- post.md
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDM5MjQ0ODEsLTY1NjQ1MzI1NSwtNT
-c4Mjk0NzU4LDE5Njg1NTY5MjgsMTM2MjM0MDY4OV19
+eyJoaXN0b3J5IjpbLTM4MjM5MTU1NiwtNjU2NDUzMjU1LC01Nz
+gyOTQ3NTgsMTk2ODU1NjkyOCwxMzYyMzQwNjg5XX0=
 -->
