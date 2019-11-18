@@ -1,7 +1,7 @@
 ## Posts
   
-| Task|Implemented     | Tested | Notes          |  
-|:--------------------------------------------------------------------------------------------------------|:-------------------|:-------|:---------------|  
+| Task|Implemented|Tested|Notes|
+|:--|:--|:--|:--|  
 | Seed *Post* dates                                                                                       | :heavy_check_mark: |        |                |  
 | Dates and times should be presented in human friendly format                                            | :heavy_check_mark: | :x: |                |  
 | Sort *posts* newest to oldest                                                                           | :heavy_check_mark: |        |                |  
@@ -12,5 +12,5 @@
 
 > Written with [StackEdit](https://stackedit.io/).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyOTI4MTg5XX0=
+eyJoaXN0b3J5IjpbLTQ1ODQ5MzA5Ml19
 -->
