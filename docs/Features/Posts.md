@@ -1,5 +1,6 @@
-## Posts
-  
+# Posts
+
+## Post
 | Task|Implemented|Tested|Notes|
 |:--|:--|:--|:--|  
 | Seed *Post* dates| :heavy_check_mark:|||  
@@ -9,5 +10,5 @@
 | The first *comment* is displayed on the *post* card with a **"view all # comments"** CTA.|:x:|:x:  ||  
 | The first *comment* displayed on the *post* card is truncated if it is too long. with a **"more…"** CTA |                   ||"too long" TBD|
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDMwMTk0OF19
+eyJoaXN0b3J5IjpbLTE5NTc0MjYwODNdfQ==
 -->
