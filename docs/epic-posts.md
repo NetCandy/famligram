@@ -12,12 +12,12 @@ so that I can stay up to date with the parts of their life they have shared.
 ## Features of Posts  
   
 - A *family member* can **add** a *[post](post.md)*.  
-- The author of an existing *post* can **edit** the *post*.  
-- The author of an existing *post* can **delete** the *post*.  
+- The author of an existing *post* can **edit** the *[post](post.md)*.  
+- The author of an existing *post* can **delete** the *[post](post.md)*.  
 - *Family members* can see a timeline of *posts* ordered newest to oldest.  
-- A *family member* can indicate that they **like** a *post*.  
-- A *family member* can **bookmark** a *post*.
+- A *family member* can indicate that they **like** a *[post](post.md)*.  
+- A *family member* can **bookmark** a *[post](post.md)*.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2ODU1NjkyOCwxMzYyMzQwNjg5LDE5Nj
-g1NTY5MjhdfQ==
+eyJoaXN0b3J5IjpbLTU3ODI5NDc1OCwxOTY4NTU2OTI4LDEzNj
+IzNDA2ODldfQ==
 -->
