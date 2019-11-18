@@ -21,8 +21,7 @@ so that I can stay up to date with the parts of their life they have shared.
 ## Related Features
 
 - [Post](post.md)
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2MjI4MDc5LC02NTY0NTMyNTUsLTU3OD
-I5NDc1OCwxOTY4NTU2OTI4LDEzNjIzNDA2ODldfQ==
+eyJoaXN0b3J5IjpbLTE0MjY4ODAyNTUsLTY1NjQ1MzI1NSwtNT
+c4Mjk0NzU4LDE5Njg1NTY5MjgsMTM2MjM0MDY4OV19
 -->
