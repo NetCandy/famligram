@@ -20,9 +20,9 @@ so that I can stay up to date with the parts of their life they have shared.
 
 ## Related Features
 
-- Post – [post.md](post.md)
-- 
+- [Post](post.md)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTE1NTY4MCwtNjU2NDUzMjU1LC01Nz
-gyOTQ3NTgsMTk2ODU1NjkyOCwxMzYyMzQwNjg5XX0=
+eyJoaXN0b3J5IjpbODk2MjI4MDc5LC02NTY0NTMyNTUsLTU3OD
+I5NDc1OCwxOTY4NTU2OTI4LDEzNjIzNDA2ODldfQ==
 -->
