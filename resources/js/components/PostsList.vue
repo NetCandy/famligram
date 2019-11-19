@@ -33,14 +33,8 @@
             :like-count="post.likes_count"
           />
           <div>
-            <font-awesome-icon class="text-gray-500 hover:text-gray-700"
-              :icon="['far','bookmark']"
-              size="lg"
-            />
-            <font-awesome-icon class="ml-2 text-gray-500 hover:text-blue-500"
-              :icon="['far','share-square']"
-              size="lg"
-            />
+            <fm-bookmark />
+            <fm-share />
           </div>
         </div>
         <fm-post-text :author="post.author.name"
@@ -63,6 +57,8 @@ import {mapGetters} from 'vuex';
 import CommentList from './CommentList';
 import PostText from './PostText';
 import Like from './Like';
+import Bookmark from './Bookmark';
+import Share from './Share';
 
 export default {
     name: 'PostsList',
@@ -71,6 +67,8 @@ export default {
         'fm-comments': CommentList,
         'fm-post-text': PostText,
         'fm-like': Like,
+        'fm-bookmark': Bookmark,
+        'fm-share': Share,
     },
 
     computed: mapGetters(['posts']),
