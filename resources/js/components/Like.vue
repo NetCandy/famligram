@@ -21,7 +21,6 @@
 <script>
 export default {
     name: 'Like',
-
     props: {
         likedByUser: {
             type: Boolean,

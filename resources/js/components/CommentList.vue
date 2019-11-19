@@ -14,7 +14,6 @@
 <script>
 export default {
     name: 'CommentList',
-
     props: {
         comments: {
             type: Array,

@@ -57,7 +57,6 @@ import PostMenu from './PostMenu';
 
 export default {
     name: 'PostsList',
-
     components: {
         'fm-comments': CommentList,
         'fm-post-text': PostText,
@@ -67,13 +66,10 @@ export default {
         'fm-new-comment': NewComment,
         'fm-post-menu': PostMenu,
     },
-
     computed: mapGetters(['posts']),
-
     async mounted() {
         this.$store.dispatch('getPosts');
     },
-
     methods: {
         avatar(value) {
             return this.$path.asset('/images/avatars/', value, '.png');
