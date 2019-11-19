@@ -5,7 +5,7 @@ module.exports = {
     },
     'extends': [
         'eslint:recommended',
-        'plugin:vue/essential'
+        'plugin:vue/recommended'
     ],
     'globals': {
         'Atomics': 'readonly',
@@ -34,6 +34,28 @@ module.exports = {
         'semi': [
             'error',
             'always'
+        ],
+
+        "vue/max-attributes-per-line": [
+            "error",
+            {
+                singleline: 1,
+                multiline: {
+                    max: 1,
+                    allowFirstLine: true
+                }
+            }
+        ],
+        "vue/html-indent": [
+            "error",
+            2,
+            {
+                attribute: 1,
+                baseIndent: 1,
+                closeBracket: 0,
+                alignAttributesVertically: false,
+                ignores: []
+            }
         ]
     }
 };

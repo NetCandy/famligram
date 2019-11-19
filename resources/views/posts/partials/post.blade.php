@@ -11,7 +11,6 @@
         </div>
         <font-awesome-icon class="text-gray-500" :icon="['fa','ellipsis-h']"></font-awesome-icon>
     </div>
-    <img src="" width="500" height="500">
     <img src="/images/{{ \Illuminate\Support\Arr::random([
                             'autum',
                             'canal',
