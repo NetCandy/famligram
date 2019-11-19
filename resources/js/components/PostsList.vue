@@ -29,23 +29,9 @@
           height="500"
         >
         <div class="flex justify-between px-4 mt-4">
-          <div class="flex">
-            <div class="flex items-center">
-              <font-awesome-icon v-if="post.liked_by_user != null"
-                class="text-red-500 hover:text-red-500"
-                :icon="['fa','heart']"
-                size="lg"
-              />
-              <font-awesome-icon v-else
-                class="text-gray-500 hover:text-red-500"
-                :icon="['far','heart']"
-                size="lg"
-              />
-              <span v-if="post.likes_count > 0"
-                class="ml-1 text-xs font-semibold text-gray-900"
-              >{{ post.likes_count }}</span>
-            </div>
-          </div>
+          <fm-like :liked-by-user="post.liked_by_user"
+            :like-count="post.likes_count"
+          />
           <div>
             <font-awesome-icon class="text-gray-500 hover:text-gray-700"
               :icon="['far','bookmark']"
@@ -76,6 +62,7 @@
 import {mapGetters} from 'vuex';
 import CommentList from './CommentList';
 import PostText from './PostText';
+import Like from './Like';
 
 export default {
     name: 'PostsList',
@@ -83,6 +70,7 @@ export default {
     components: {
         'fm-comments': CommentList,
         'fm-post-text': PostText,
+        'fm-like': Like,
     },
 
     computed: mapGetters(['posts']),
