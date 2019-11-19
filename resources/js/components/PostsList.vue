@@ -57,10 +57,9 @@
             />
           </div>
         </div>
-        <p class="px-4 mt-4 leading-snug text-sm">
-          <span class="font-bold">{{ post.author.name }}</span>
-          {{ post.text }}
-        </p>
+        <fm-post-text :author="post.author.name"
+          :text="post.text"
+        />
         <fm-comments
           :comments="post.comments"
         />
@@ -76,12 +75,14 @@
 <script>
 import {mapGetters} from 'vuex';
 import CommentList from './CommentList';
+import PostText from './PostText';
 
 export default {
     name: 'PostsList',
 
     components: {
-        'fm-comments': CommentList
+        'fm-comments': CommentList,
+        'fm-post-text': PostText,
     },
 
     computed: mapGetters(['posts']),
