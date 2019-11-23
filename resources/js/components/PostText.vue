@@ -1,5 +1,5 @@
 <template>
-  <p class="px-4 mt-4 leading-snug text-sm">
+  <p class="px-2 pb-2 leading-snug text-sm border-b">
     <span class="font-bold">{{ author }}</span>
     {{ $str.limit(text, 100) }}
   </p>

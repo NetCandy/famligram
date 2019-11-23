@@ -23,7 +23,7 @@ export default {
     name: 'Like',
     props: {
         likedByUser: {
-            type: Boolean,
+            type: Number|null,
             required: true,
         },
         likeCount: {
