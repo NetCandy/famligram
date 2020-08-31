@@ -13,12 +13,15 @@ import { faUserTag } from '@fortawesome/free-solid-svg-icons';
 library.add(faHeart, faHeartSolid, faShareSquare, faBookmark, faEllipsisH, faBorderAll, faUserTag);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
+import store from './store';
+
 import './bootstrap';
 
-
-window.Vue = Vue;
+import PostsList from './components/PostsList';
+Vue.component('fm-post-list', PostsList);
 
 Vue.config.productionTip = false;
 new Vue({
+    store,
     el: '#app',
 });

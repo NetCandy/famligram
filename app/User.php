@@ -5,9 +5,16 @@ namespace App;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 
+/**
+ * @property int id
+ */
 class User extends Authenticatable
 {
     use Notifiable;
+
+    protected $visible = [
+        'name',
+    ];
 
     /**
      * The attributes that are mass assignable.
