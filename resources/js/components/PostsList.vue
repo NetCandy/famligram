@@ -17,7 +17,6 @@
 import {mapGetters} from 'vuex';
 import Post from './Post';
 export default {
-    name: 'PostsList',
     components: {
         'fm-post': Post,
     },

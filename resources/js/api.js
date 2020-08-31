@@ -1,5 +1,4 @@
-// @todo figure out how to swap in the correct URI for the current environment.
-const API_URL = 'https://localhost:3000/api/';
+const API_URL = window.location.origin + '/api/';
 
 export default {
     async getPosts() {
