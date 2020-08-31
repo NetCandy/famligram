@@ -11608,7 +11608,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: 'PostsList',
   components: {
     'fm-post': _Post__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
@@ -44332,8 +44331,7 @@ function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try
 
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
-// @todo figure out how to swap in the correct URI for the current environment.
-var API_URL = 'https://localhost:3000/api/';
+var API_URL = window.location.origin + '/api/';
 /* harmony default export */ __webpack_exports__["default"] = ({
   getPosts: function getPosts() {
     return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
